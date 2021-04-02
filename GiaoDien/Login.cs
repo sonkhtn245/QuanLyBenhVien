@@ -24,7 +24,7 @@ namespace GiaoDien
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text=="system" && txtPassword.Text=="system")
+            if(txtUsername.Text=="admin" && txtPassword.Text=="admin")
             {
                 this.Hide();
                 PhanHe1 phanhe1 = new PhanHe1();
