@@ -39,10 +39,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txt_soluonguser = new System.Windows.Forms.TextBox();
-            this.txt_userAmount = new System.Windows.Forms.TextBox();
             this.topdashboard_text = new System.Windows.Forms.TextBox();
             this.pn_User = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panelstatistic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stasticpicture)).BeginInit();
             this.panel4.SuspendLayout();
@@ -143,7 +143,6 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.txt_soluonguser);
-            this.panel3.Controls.Add(this.txt_userAmount);
             this.panel3.Location = new System.Drawing.Point(24, 74);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(326, 337);
@@ -174,20 +173,6 @@
             this.txt_soluonguser.Text = "78";
             this.txt_soluonguser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txt_userAmount
-            // 
-            this.txt_userAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_userAmount.BackColor = System.Drawing.Color.White;
-            this.txt_userAmount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_userAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_userAmount.ForeColor = System.Drawing.Color.Coral;
-            this.txt_userAmount.Location = new System.Drawing.Point(102, 25);
-            this.txt_userAmount.Name = "txt_userAmount";
-            this.txt_userAmount.Size = new System.Drawing.Size(119, 42);
-            this.txt_userAmount.TabIndex = 1;
-            this.txt_userAmount.Text = "Users";
-            this.txt_userAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // topdashboard_text
             // 
             this.topdashboard_text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
@@ -205,6 +190,7 @@
             // pn_User
             // 
             this.pn_User.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pn_User.Controls.Add(this.textBox2);
             this.pn_User.Controls.Add(this.pictureBox1);
             this.pn_User.Location = new System.Drawing.Point(261, 444);
             this.pn_User.Name = "pn_User";
@@ -213,11 +199,20 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(54, 23);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(56, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(88, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(56, 75);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 1;
             // 
             // Dashboard
             // 
@@ -243,6 +238,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pn_User.ResumeLayout(false);
+            this.pn_User.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -261,9 +257,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox txt_soluonguser;
-        private System.Windows.Forms.TextBox txt_userAmount;
         private System.Windows.Forms.TextBox topdashboard_text;
         private System.Windows.Forms.Panel pn_User;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
