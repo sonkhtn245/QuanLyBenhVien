@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace GiaoDien
 {
     public partial class Login : Form
@@ -21,15 +20,25 @@ namespace GiaoDien
         {
 
         }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
 
+        }    
         private void button1_Click(object sender, EventArgs e)
         {
+            int temp = 0;
             if(txtUsername.Text=="admin" && txtPassword.Text=="admin")
             {
                 this.Hide();
                 PhanHe1 phanhe1 = new PhanHe1();
                 phanhe1.ShowDialog();
                 this.Close();
+            }
+            else
+            {
+                this.Alert("Login Failed", Form_Alert.enmType.Failed);
             }    
         }
 
