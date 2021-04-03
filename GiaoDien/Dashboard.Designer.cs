@@ -41,12 +41,16 @@
             this.txt_soluonguser = new System.Windows.Forms.TextBox();
             this.txt_userAmount = new System.Windows.Forms.TextBox();
             this.topdashboard_text = new System.Windows.Forms.TextBox();
+            this.pn_User = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelstatistic.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stasticpicture)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pn_User.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelstatistic
@@ -193,17 +197,35 @@
             this.topdashboard_text.ForeColor = System.Drawing.SystemColors.Window;
             this.topdashboard_text.Location = new System.Drawing.Point(0, 0);
             this.topdashboard_text.Name = "topdashboard_text";
-            this.topdashboard_text.Size = new System.Drawing.Size(1140, 49);
+            this.topdashboard_text.Size = new System.Drawing.Size(1268, 49);
             this.topdashboard_text.TabIndex = 9;
             this.topdashboard_text.Text = "Dashboard";
             this.topdashboard_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pn_User
+            // 
+            this.pn_User.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pn_User.Controls.Add(this.pictureBox1);
+            this.pn_User.Location = new System.Drawing.Point(261, 444);
+            this.pn_User.Name = "pn_User";
+            this.pn_User.Size = new System.Drawing.Size(200, 100);
+            this.pn_User.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(54, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1140, 531);
+            this.ClientSize = new System.Drawing.Size(1268, 628);
+            this.Controls.Add(this.pn_User);
             this.Controls.Add(this.topdashboard_text);
             this.Controls.Add(this.panelstatistic);
             this.Controls.Add(this.panel4);
@@ -220,6 +242,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pn_User.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,5 +263,7 @@
         private System.Windows.Forms.TextBox txt_soluonguser;
         private System.Windows.Forms.TextBox txt_userAmount;
         private System.Windows.Forms.TextBox topdashboard_text;
+        private System.Windows.Forms.Panel pn_User;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
