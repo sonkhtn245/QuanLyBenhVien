@@ -196,6 +196,7 @@
             this.pn_User.Name = "pn_User";
             this.pn_User.Size = new System.Drawing.Size(200, 100);
             this.pn_User.TabIndex = 10;
+            this.pn_User.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_User_Paint);
             // 
             // pictureBox1
             // 

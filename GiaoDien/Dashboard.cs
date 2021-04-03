@@ -21,5 +21,10 @@ namespace GiaoDien
         {
 
         }
+
+        private void pn_User_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
